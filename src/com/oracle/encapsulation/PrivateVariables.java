@@ -11,12 +11,19 @@ public class PrivateVariables {
 		this.var2 = var2;
 		this.var3 = var3;
 	}
+	PrivateVariables(){
+		super();
+	}
 	
 	void method() {
 		System.out.println("var1 is "+var1+", var2 is "+var2+ ", var3 is "+var3+".");
 		
 	}
 	
+	@Override
+	public String toString() {
+		return "PrivateVariables [var1=" + var1 + ", var2=" + var2 + ", var3=" + var3 + "]";
+	}
 	public String getVar1() {
 		return var1;
 	}
